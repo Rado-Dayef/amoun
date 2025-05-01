@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560822888120",
+    "project_id": "amoun-5a154",
+    "storage_bucket": "amoun-5a154.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560822888120:android:234c4b260c62285d0b764d",
+        "android_client_info": {
+          "package_name": "com.example.amoun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpKRSALpx_tU41n2mh7Cfgjz_6Sw1BojE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -37,7 +37,7 @@ class GetStartedController extends GetxController {
         update();
       });
     } else {
-      Get.toNamed(AppStrings.signupRoute);
+      Get.toNamed(AppStrings.loginRoute);
     }
     update();
   }

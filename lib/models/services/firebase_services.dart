@@ -33,7 +33,7 @@ class FirebaseServices {
         return error.toString();
       }
     } else {
-      UserModel user = UserModel(email: AppStrings.guestText, lastName: AppStrings.guestText, firstName: AppStrings.guestText);
+      UserModel user = UserModel(email: AppStrings.guestText, name: AppStrings.guestText);
       return user;
     }
   }

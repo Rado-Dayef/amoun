@@ -13,16 +13,18 @@ class SignUpController extends GetxController {
   bool isSignUpClicked = false;
   String email = AppStrings.emptySign;
   String password = AppStrings.emptySign;
-  String lastName = AppStrings.emptySign;
-  String firstName = AppStrings.emptySign;
+  String name = AppStrings.emptySign;
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+
   GlobalKey<FormState> signUpFormStateKey = GlobalKey<FormState>();
 
   /// To reset all fields.
   void resetFields() {
     email = AppStrings.emptySign;
     password = AppStrings.emptySign;
-    lastName = AppStrings.emptySign;
-    firstName = AppStrings.emptySign;
+    name = AppStrings.emptySign;
     update();
   }
 
@@ -44,7 +46,7 @@ class SignUpController extends GetxController {
       dynamic signUpResponse = await FirebaseAuthService().signUp(email, password);
       if (signUpResponse is User) {
         FirebaseAuthService().signOut();
-        UserModel user = UserModel(email: email, lastName: lastName, firstName: firstName);
+        UserModel user = UserModel(email: email, name: name);
         dynamic uploadUserResponse = await FirebaseServices.uploadUser(user);
         if (uploadUserResponse is UserModel) {
           Get.offNamed(AppStrings.loginRoute);

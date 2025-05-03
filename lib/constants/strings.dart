@@ -10,6 +10,8 @@ class AppStrings {
   static const String splashRoute = "/splash";
   static const String getStartedRoute = "/getStarted";
   static const String resetPasswordRoute = "/resetPassword";
+  static const String translateRoute = "/translate";
+  static const String aiRoute = "/ai";
 
   /// Error Code.
   static const String invalidEmailErrorCode = "invalid-email";

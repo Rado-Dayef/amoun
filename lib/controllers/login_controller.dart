@@ -12,6 +12,7 @@ class LoginController extends GetxController {
   bool isLoginClicked = false;
   String email = AppStrings.emptySign;
   String password = AppStrings.emptySign;
+  TextEditingController emailController = TextEditingController();
   GlobalKey<FormState> loginFormStateKey = GlobalKey<FormState>();
 
   /// To reset all fields.

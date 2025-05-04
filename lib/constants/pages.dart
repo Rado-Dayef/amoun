@@ -4,6 +4,7 @@ import 'package:amoun/views/screens/get_started_screen.dart';
 import 'package:amoun/views/screens/home_screen.dart';
 import 'package:amoun/views/screens/login_screen.dart';
 import 'package:amoun/views/screens/nev_screen.dart';
+import 'package:amoun/views/screens/profile_screen.dart';
 import 'package:amoun/views/screens/reset_password_screen.dart';
 import 'package:amoun/views/screens/signup_screen.dart';
 import 'package:amoun/views/screens/splash_screen.dart';
@@ -21,5 +22,6 @@ class AppPages {
     GetPage(name: AppStrings.resetPasswordRoute, page: () => const ResetPasswordScreen(), transition: Transition.noTransition),
     GetPage(name: AppStrings.translateRoute, page: () => const TranslateScreen(), transition: Transition.noTransition),
     GetPage(name: AppStrings.aiRoute, page: () => const AiScreen(), transition: Transition.noTransition),
+    GetPage(name: AppStrings.profileRoute, page: () => const ProfileScreen(), transition: Transition.noTransition),
   ];
 }

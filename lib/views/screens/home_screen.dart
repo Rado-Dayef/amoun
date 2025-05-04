@@ -17,10 +17,15 @@ class HomeScreen extends GetWidget<HomeController> {
       appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            radius: 5,
-            backgroundColor: Colors.grey,
-            child: Icon(Icons.person, color: Colors.white),
+          child: InkWell(
+            onTap: () {
+              Get.toNamed(AppStrings.profileRoute,arguments: controller.user);
+            },
+            child: CircleAvatar(
+              radius: 5,
+              backgroundColor: Colors.grey,
+              child: Icon(Icons.person, color: Colors.white),
+            ),
           ),
         ),
         actions: [

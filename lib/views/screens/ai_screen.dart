@@ -74,6 +74,7 @@ class _AiScreenState extends State<AiScreen> {
             child: Center(
               child: Text(
                 'AI Recognition Result',
+
                 style: TextStyle(
                   color: AppColors.darkNbetyColor,
                   fontSize: 18,
